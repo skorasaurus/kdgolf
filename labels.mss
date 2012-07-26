@@ -605,3 +605,13 @@
 
 
 /* ****************************************************************** */
+
+
+/* COURSE */ 
+
+/* Have the basket # display near the point or line */
+
+#course[size>15]
+{
+
+  }
