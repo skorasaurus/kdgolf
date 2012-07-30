@@ -641,7 +641,10 @@
         "dbname": "kdgolf",
         "host": "localhost",
         "user": "postgres",
-        "password": "postgres"
+        "password": "postgres",
+        "id": "course",
+        "project": "kdgolf",
+        "srs": null
       },
       "id": "course",
       "class": "",

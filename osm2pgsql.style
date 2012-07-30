@@ -39,14 +39,12 @@ node,way   barrier      text         linear
 node,way   basket       text         linear # ADDED 
 node,way   bicycle      text         nocache
 node,way   bonus        text         linear # ADDED 
-node,way   brand        text         linear
+node,way   brand        text         deleted
 node,way   bridge       text         linear
 node,way   boundary     text         linear
 node,way   building     text         polygon
 node,way   construction text         linear
 node,way   covered      text         linear
-node,way   culvert      text         linear
-node,way   cutting      text         linear
 node,way   denomination text         delete
 node,way   disused      text         delete
 node       ele          text         delete
@@ -66,11 +64,11 @@ node,way   motorcar     text         linear
 node,way   name         text         linear
 node,way   natural      text         polygon  # natural=coastline tags are discarded by a hard coded rule in osm2pgsql
 node,way   oneway       text         linear
-node,way   operator     text         linear
+node,way   operator     text         delete
 node       poi          text
-node,way   population   text         linear
-node,way   power        text         polygon
-node,way   power_source text         linear
+node,way   population   text         delete
+node,way   power        text         delete
+node,way   power_source text         delete
 node,way   place        text         polygon
 node,way   railway      text         linear
 node,way   ref          text         linear
@@ -79,7 +77,6 @@ node,way   shop         text         polygon
 node,way   sport        text         polygon
 node,way   surface      text         linear
 node,way   tee          text         linear # ADDED 
-node,way   toll         text         linear
 node,way   tower:type   text         linear
 way        tracktype    text         delete
 node,way   tunnel       text         linear
