@@ -1,19 +1,19 @@
 {
   "bounds": [
-    -85.99998,
-    42.2,
-    180,
-    42.3
+    -85.605,
+    42.2884,
+    -85.595,
+    42.2928
   ],
   "center": [
-    -85.601,
-    42.291,
-    15
+    -85.6001,
+    42.2904,
+    16
   ],
   "format": "png",
   "interactivity": false,
   "minzoom": 15,
-  "maxzoom": 21,
+  "maxzoom": 22,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "palette.mss",
@@ -616,8 +616,8 @@
         "key_field": "",
         "password": "postgres",
         "port": "5432",
-        "project": "foss4g-2011",
-        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "project": "kdgolf",
+        "srs": null,
         "table": "( SELECT way, highway AS type, name, oneway\n  FROM planet_osm_line\n  WHERE (name IS NOT NULL OR oneway IN ('yes', 'true', '1', '-1'))\n    AND highway IN ('residential', 'unclassified', 'road', 'living_street', 'unknown')\n) AS data",
         "type": "postgis",
         "user": "postgres"
@@ -634,7 +634,7 @@
       "geometry": "point",
       "Datasource": {
         "type": "postgis",
-        "table": "planet_osm_point",
+        "table": "( SELECT tee, way from planet_osm_point ) AS teez",
         "extent": "",
         "key_field": "",
         "geometry_field": "",
@@ -646,11 +646,52 @@
         "project": "kdgolf",
         "srs": null
       },
-      "id": "course",
+      "id": "tee-node",
       "class": "",
       "srs-name": "900913",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "name": "course"
+      "name": "tee-node"
+    },
+    {
+      "geometry": "point",
+      "Datasource": {
+        "type": "postgis",
+        "table": "( SELECT basket, way from planet_osm_point ) AS baseket",
+        "extent": "",
+        "key_field": "",
+        "geometry_field": "",
+        "dbname": "kdgolf",
+        "host": "localhost",
+        "user": "postgres",
+        "password": "postgres",
+        "id": "basket-node",
+        "project": "kdgolf",
+        "srs": null
+      },
+      "id": "basket-node",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "basket-node"
+    },
+    {
+      "geometry": "linestring",
+      "Datasource": {
+        "type": "postgis",
+        "table": "planet_osm_line",
+        "extent": "",
+        "key_field": "",
+        "geometry_field": "",
+        "dbname": "kdgolf",
+        "host": "localhost",
+        "user": "postgres",
+        "password": "postgres"
+      },
+      "id": "basket-line",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "basket-line"
     }
   ],
   "attribution": "Data © OpenStreetMap (and) contributors, CC-BY-SA",
