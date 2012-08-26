@@ -146,15 +146,6 @@ Map { font-directory: url(./fonts); }
 /* ****************************************************************** */
 
 
-
-
-#course {
-marker-width:6;
-  marker-fill:#f45;
-  marker-line-color:#813;
-  marker-allow-overlap:true;
-}
-
 #basket-node {
   marker-width:6;
   marker-fill:#999;
@@ -163,6 +154,14 @@ marker-width:6;
 }
 
 #basket-line {
-  line-width:1;
-  line-color:#168;
+  line-width:3;
+  line-color:#FF6C00;
+}
+
+
+#tee-node {
+marker-width:9;
+  marker-fill:#3049FF;
+  marker-line-color:#3049FF;
+  marker-allow-overlap:true;
 }
