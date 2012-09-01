@@ -151,6 +151,10 @@ Map { font-directory: url(./fonts); }
   marker-fill:#999;
   marker-line-color:#813;
   marker-allow-overlap:true;
+/*  [zoom>18] {
+    marker-line-color:darken(@basket-node,5);
+    marker-width:9;
+  } finish later */ 
 }
 
 #basket-line {
@@ -164,4 +168,10 @@ marker-width:9;
   marker-fill:#3049FF;
   marker-line-color:#3049FF;
   marker-allow-overlap:true;
+}
+
+
+#tee-line {
+  line-width:3;
+  line-color:#444;
 }
