@@ -147,7 +147,7 @@ Map { font-directory: url(./fonts); }
 
 
 #basket-node {
-  marker-width:6;
+  marker-width:15;
   marker-fill:#999;
   marker-line-color:#813;
   marker-allow-overlap:true;

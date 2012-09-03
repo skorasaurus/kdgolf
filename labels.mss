@@ -611,7 +611,9 @@
 
 /* Have the basket # display near the point or line */
 
-#course[size>15]
-{
-
+#basket-node{
+  text-name: "[basket]" ;
+  text-face-name:@sans;
+  text-fill:#444;
+ text-size: 12;
   }
