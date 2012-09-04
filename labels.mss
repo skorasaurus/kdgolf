@@ -616,4 +616,13 @@
   text-face-name:@sans;
   text-fill:#444;
  text-size: 12;
+  text-allow-overlap: true;
+  }
+
+#basket-line{
+  text-name: "[basket]" ;
+  text-face-name:@sans;
+  text-fill:#444;
+ text-size: 12;
+  text-allow-overlap: true;
   }
