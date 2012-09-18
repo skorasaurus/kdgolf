@@ -136,9 +136,6 @@ Map { font-directory: url(./fonts); }
 @other_text:        #888;
 @other_halo:        @place_halo;
 
-@locality_text:     #aaa;
-@locality_halo:     @land;
-
 /* Also used for other small places: hamlets, suburbs, localities */
 @village_text:      #888;
 @village_halo:      @place_halo;
@@ -149,6 +146,7 @@ Map { font-directory: url(./fonts); }
 #basket-node {
   marker-width:15;
   marker-fill:#999;
+  marker-fill-opacity:.22;
   marker-line-color:#813;
   marker-allow-overlap:true;
 /*  [zoom>18] {
@@ -168,6 +166,7 @@ Map { font-directory: url(./fonts); }
 marker-width:9;
   marker-fill:#3049FF;
   marker-line-color:#3049FF;
+  marker-fill-opacity:.22;
   marker-allow-overlap:true;
 }
 

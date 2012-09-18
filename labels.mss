@@ -228,32 +228,6 @@
   }
 }
 
-#place::small[type='locality'][zoom>=15] {
-  text-name:'[name]';
-  text-face-name:@sans;
-  text-placement:point;
-  text-fill:@locality_text;
-  text-size:9;
-  text-halo-fill:@locality_halo;
-  text-halo-radius:1;
-  text-wrap-width: 30;
-  [zoom>=16] {
-    text-size:10;
-    text-wrap-width: 60;
-    text-line-spacing: 1;
-  }
-  [zoom>=17] {
-    text-size:11;
-    text-wrap-width: 120;
-    text-line-spacing: 2;
-  }
-  [zoom>=18] {
-    text-size:12;
-    text-character-spacing: 1;
-    text-line-spacing: 4;
-  }
-}
-
 
 /* ================================================================== */
 /* AREA LABELS
