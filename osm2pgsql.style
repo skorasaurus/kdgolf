@@ -5,6 +5,8 @@
 # of useless data loaded into the DB, which is a good thing. Possible
 # optimisations for the future:
 
+# this is used for the KDGOLF, specifically for the course specific layer.
+
 # 1. Generate this file directly from the mapnik XML config, so it's always
 # optimal
 
