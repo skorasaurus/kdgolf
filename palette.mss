@@ -47,7 +47,9 @@ Map { font-directory: url(./fonts); }
 
 @building:          #E4E0E0;
 @hospital:          rgb(229,198,195);
-@school:            #FFF5CC;
+
+/* q&d hack to remove the university and use grass as background. */
+@school:            #E6F2C1;
 @sports:            #B8E6B8;
 
 @residential:       @land * 0.98;
