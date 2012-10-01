@@ -600,3 +600,20 @@
  text-size: 12;
   text-allow-overlap: true;
   }
+
+#tee-node{
+  text-name: "[tee]" ;
+  text-face-name:@sans;
+  text-fill:#444;
+ text-size: 12;
+  text-allow-overlap: true;
+  }
+
+#tee-line{
+  text-name: "[tee]" ;
+  text-face-name:@sans;
+  text-fill:#444;
+ text-size: 12;
+  text-allow-overlap: true;
+  }
+

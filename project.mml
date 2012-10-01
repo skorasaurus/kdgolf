@@ -747,5 +747,6 @@
   "metatile": 2,
   "attribution": "Data © OpenStreetMap (and) contributors, CC-BY-SA",
   "description": "",
-  "name": "K disc golf"
+  "name": "K disc golf",
+  "legend": "\n"
 }

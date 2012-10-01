@@ -49,7 +49,7 @@ Map { font-directory: url(./fonts); }
 @hospital:          rgb(229,198,195);
 
 /* q&d hack to remove the university and use grass as background. */
-@school:            #E6F2C1;
+@school:            #DAF2C1;
 @sports:            #B8E6B8;
 
 @residential:       @land * 0.98;
@@ -176,5 +176,5 @@ marker-width:9;
 
 #tee-line {
   line-width:3;
-  line-color:#444;
+  line-color:#3049FF;
 }
