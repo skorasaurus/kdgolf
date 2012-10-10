@@ -6,10 +6,10 @@
   marker-fill-opacity:.22;
   marker-line-color:#813;
   marker-allow-overlap:true;
-/*  [zoom>18] {
+/* [zoom>18] {
     marker-line-color:darken(@basket-node,5);
     marker-width:9;
-  } finish later */ 
+  } finish later */
 }
 
 #basket-line {
@@ -30,5 +30,5 @@ marker-width:9;
 
 #tee-line {
   line-width:3;
-  line-color:#444;
+  line-color:#3049FF;
 }
