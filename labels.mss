@@ -306,10 +306,21 @@
     text-character-spacing: 3;
     text-wrap-width: 180;
   }
+  [zoom>=18][area>1600000],
+  [zoom>=19][area>2000] {
+    text-size: 28;
+    text-character-spacing: 3;
+    text-wrap-width: 180;
+  }
+  [zoom>=20][area>2800],
+  [zoom>=21][area>2000] {
+    text-size: 46;
+    text-character-spacing: 3;
+    text-wrap-width: 180;
+  }
 }
    
-  
-   
+
 #poi[type='university'][zoom>=15],
 #poi[type='hospital'][zoom>=16],
 #poi[type='school'][zoom>=17],
@@ -321,56 +332,7 @@
   text-fill: @poi_text;
 }
 
-/* building labels */
-/*#area_label[type='building'][zoom>=10] {
-  text-name: "''";
-  text-fill: @building * 0.75;
-  text-halo-fill: fadeout(lighten(@building,5%),25%);
-  text-halo-radius: 1;
-  text-face-name:@sans_italic;
-  text-wrap-width:30;
-  [zoom=10][area>102400000],
-  [zoom=11][area>25600000],
-  [zoom=13][area>1600000],
-  [zoom=14][area>320000],
-  [zoom=15][area>80000],
-  [zoom=16][area>20000],
-  [zoom=17][area>5000],
-  [zoom>=18][area>=0] {
-    text-name: "[name]";
-  }
-  [zoom=15][area>1600000],
-  [zoom=16][area>80000],
-  [zoom=17][area>20000],
-  [zoom=18][area>5000] {
-    text-name: "[name]";
-    text-size: 12;
-    text-line-spacing: 2;
-    text-wrap-width: 60;
-    text-character-spacing: 1;
-  }
-  [zoom=16][area>1600000],
-  [zoom=17][area>80000],
-  [zoom=18][area>20000] {
-    text-size: 14;
-    text-line-spacing: 4;
-    text-character-spacing: 2;
-    text-wrap-width: 120;
-  }
-  [zoom>=17][area>1600000],
-  [zoom>=19][area>100] {
-    text-size: 8;
-    text-line-spacing: 6;
-    text-character-spacing: 3;
-    text-wrap-width: 180;
-  }
-  [zoom>=19] {
-    text-size: 8;
-    text-line-spacing: 6;
-    text-character-spacing: 3;
-    text-wrap-width: 180;
-  }
-}*/
+
 
 
 /* ================================================================== */
