@@ -280,7 +280,7 @@
     }
     [type='building'][zoom>=10] {
       text-fill: @building * 0.6;
-      text-halo-fill: lighten(@water, 10);
+      text-halo-fill: lighten(@building, 10);
     }
   }
   [zoom=15][area>1600000],
