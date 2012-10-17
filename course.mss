@@ -15,7 +15,7 @@
 #basket-line {
   line-width:3;
   line-color:#FF6C00;
-  line-smooth:1; 
+  
   [zoom>=18] {line-width:6;   }
   [zoom>=19] {line-width:8;   }
 }
@@ -32,7 +32,7 @@ marker-width:9;
 
 #tee-line {
   line-width:3;
+
   line-color:#3049FF;
-  marker-fill:#999;
-  marker-fill-opacity:.22;
+  polygon-fill:#999;
 }
