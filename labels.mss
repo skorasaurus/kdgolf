@@ -264,10 +264,6 @@
       text-fill: @cemetery * 0.6;
       text-halo-fill: lighten(@cemetery, 10);
     }
-    [type='hospital'][zoom>=10] {
-      text-fill: @hospital * 0.6;
-      text-halo-fill: lighten(@hospital, 10);
-    }
     [type='college'][zoom>=10],
     [type='school'][zoom>=10],
     [type='university'][zoom>=10] {
