@@ -252,7 +252,6 @@
     text-halo-fill: #fff;
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
-    
       text-fill: @park * 0.6;
       text-halo-fill: lighten(@park, 10);
     }
@@ -278,27 +277,21 @@
       text-fill: @building * 0.6;
       text-halo-fill: lighten(@building, 10);
     }
-  }
+    
+  } /* As building size increases and  increase size of text, and */
   [zoom=15][area>1600000],
   [zoom=16][area>80000],
   [zoom=17][area>20000],
   [zoom=18][area>5000] {
     text-name: "[name]";
-    text-size: 13;
+    text-size: 15;
     text-wrap-width: 60;
     text-character-spacing: 1;
     text-halo-radius: 2;
   }
-  [zoom=16][area>1600000],
-  [zoom=17][area>80000],
-  [zoom=18][area>20000] {
-    text-size: 15;
-    text-character-spacing: 2;
-    text-wrap-width: 120;
-  }
   [zoom>=17][area>1600000],
-  [zoom>=18][area>80000] {
-    text-size: 20;
+  [zoom>=18][area>1700] {
+    text-size: 15;
     text-character-spacing: 3;
     text-wrap-width: 180;
   }
@@ -314,6 +307,7 @@
     text-character-spacing: 3;
     text-wrap-width: 180;
   }
+  
 }
    
 
