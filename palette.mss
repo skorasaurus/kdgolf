@@ -54,7 +54,6 @@ Map { font-directory: url(./fonts); }
 
 @residential:       @land * 0.98;
 @commercial:        @land * 0.97;
-@industrial:        @land * 0.96;
 @parking:           #EEE;
 
 /* ================================================================== */

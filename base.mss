@@ -22,12 +22,10 @@
 #landuse[zoom>12] {
   [type='cemetery']      { polygon-fill: @cemetery; }
   [type='college']       { polygon-fill: @school; }
-  [type='commercial']    { polygon-fill: @industrial; }
   [type='forest']        { polygon-fill: @wooded; }
   [type='golf_course']   { polygon-fill: @park; }
   [type='grass']         { polygon-fill: @park; }
   [type='hospital']      { polygon-fill: @hospital; }
-  [type='industrial']    { polygon-fill: @industrial; }
   [type='park']          { polygon-fill: @park; }
   [type='parking']       { polygon-fill: @parking; }
   [type='pedestrian']    { polygon-fill: @pedestrian_fill; }
