@@ -206,7 +206,7 @@
     text-size: 11;
     text-wrap-width:30;
     text-fill: @school * 0.6;
-    text-halo-fill: #fff;
+    text-halo-fill: lighten(@school, 10);
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
       text-fill: @park * 0.6;
@@ -255,27 +255,13 @@
   }
   [zoom>=20][area>2800],
   [zoom>=21][area>2000] {
-    text-size: 46;
+    text-size: 30;
     text-character-spacing: 3;
     text-wrap-width: 180;
   }
   
 }
-   
-
-#poi[type='university'][zoom>=15],
-#poi[type='hospital'][zoom>=16],
-#poi[type='school'][zoom>=17],
-#poi[type='library'][zoom>=17] {
-  text-name:"[name]";
-  text-face-name:@sans;
-  text-size:10;
-  text-wrap-width:30;
-  text-fill: @poi_text;
-}
-
-
-
+  
 
 /* ================================================================== */
 /* WATERWAY LABELS
