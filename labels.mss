@@ -242,20 +242,22 @@
     text-character-spacing: 1;
     text-halo-radius: 2;
   }
-  [zoom>=17][area>1600000],{
-    text-size: 15;
-    text-character-spacing: 3;
-    text-wrap-width: 180;
-  }
+
   [zoom>=18][area>1600000],
-  [zoom>=19][area>2000] {
-    text-size: 28;
+  [zoom>=19][area>1700] {
+    text-size: 26;
     text-character-spacing: 3;
     text-wrap-width: 180;
-  }
-  [zoom>=20][area>2800],
-  [zoom>=21][area>2000] {
-    text-size: 30;
+  } 
+  /*asking for for text-name for, oddly, as an error, so redeclaring it */
+  [zoom>=20][area>1500],
+  [zoom>=21][area>1000],
+  [zoom=22][area>10] {
+      text-name: "[name]";
+      text-face-name: @sans;
+     text-fill: @building * 0.6;
+    text-halo-fill: lighten(@building, 10);
+    text-size: 60;
     text-character-spacing: 3;
     text-wrap-width: 180;
   }
