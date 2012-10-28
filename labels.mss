@@ -203,7 +203,7 @@
     text-name: "[name]";
     text-halo-radius: 1.5;
     text-face-name:@sans;
-    text-size: 11;
+    text-size: 14;
     text-wrap-width:30;
     text-fill: @school * 0.6;
     text-halo-fill: lighten(@school, 10);
@@ -264,6 +264,16 @@
   
 }
   
+
+
+/* ================================================================== */
+/* TEE & BASKETS LABELS 
+/* ================================================================== */
+
+/* Z17 - displaye the numbers at all or not ? */
+/* Z18 - perhaps increase the tint or the at each level ? 
+ z19 - (text size above 12, for sure) 
+*/ 
 
 /* ================================================================== */
 /* WATERWAY LABELS
