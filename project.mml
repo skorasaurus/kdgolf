@@ -761,12 +761,39 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "tee-line"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -85.60349910058882,
+        42.28890084188573,
+        -85.59881375756143,
+        42.29080597999608
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( SELECT basket, way from planet_osm_point WHERE basket IS NOT NULL UNION ALL \nSELECT basket, way from planet_osm_line WHERE basket IS NOT NULL) \nAS data",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-9529337.93,5204354.11,-9528816.36,5204640.8",
+        "dbname": "kdgolf",
+        "host": "localhost",
+        "user": "postgres",
+        "password": "postgres"
+      },
+      "id": "basket-label",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "basket-label"
     }
   ],
   "scale": 1,
   "metatile": 2,
   "attribution": "Data © OpenStreetMap (and) contributors, OBDL",
-  "description": "",
+  "description": "map of K College's campus disc golf course . https://github.com/skorasaurus/kdgolf",
   "name": "K disc golf",
   "legend": "\n"
 }
