@@ -804,7 +804,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "( SELECT basket, way from planet_osm_point WHERE basket IS NOT NULL UNION ALL \nSELECT basket, way from planet_osm_line WHERE basket IS NOT NULL) \nAS data",
+        "table": "(SELECT basket, way from planet_osm_point WHERE basket IS NOT NULL UNION ALL \nSELECT basket, way from planet_osm_line WHERE basket IS NOT NULL) \nAS data",
         "key_field": "",
         "geometry_field": "",
         "extent_cache": "auto",
@@ -812,7 +812,10 @@
         "dbname": "kdgolf2",
         "host": "localhost",
         "user": "postgres",
-        "password": "postgres"
+        "password": "postgres",
+        "id": "basket-label",
+        "project": "kdgolf",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
       },
       "id": "basket-label",
       "class": "",
