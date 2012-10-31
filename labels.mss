@@ -284,7 +284,7 @@
   text-name: "[basket]" ;
   text-face-name:@sans;
   text-fill:#444;
-  text-size: 12;
+ text-size: 12;
   text-allow-overlap: true;
   text-placement:point;
   text-halo-fill:@other_halo;
