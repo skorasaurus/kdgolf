@@ -280,7 +280,7 @@
 
 /* Have the basket # display near the point or line */
 
-#basket-label {
+#basket-node-label {
   text-name: "[basket]" ;
   text-face-name:@sans;
   text-fill:#444;
