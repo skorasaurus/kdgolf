@@ -804,7 +804,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "( SELECT basket, way from planet_osm_point WHERE basket IS NOT NULL) as dayta ",
+        "table": "( SELECT basket, way from planet_osm_point WHERE basket IS NOT NULL) AS dayta ",
         "key_field": "",
         "geometry_field": "",
         "extent_cache": "auto",
