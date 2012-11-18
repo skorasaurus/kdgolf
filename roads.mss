@@ -62,6 +62,9 @@ come in as well.
 @rdz16_maj: 8;   @rdz16_med: 6;   @rdz16_min: 4;
 @rdz17_maj: 14;  @rdz17_med: 12;  @rdz17_min: 10;
 @rdz18_maj: 20;  @rdz18_med: 17;  @rdz18_min: 14;
+@rdz19_maj: 20;  @rdz19_med: 17;  @rdz19_min: 19;
+@rdz20_maj: 20;  @rdz20_med: 17;  @rdz20_min: 24;
+
 
 /* ---- Casing ----------------------------------------------- */
 
@@ -171,10 +174,18 @@ come in as well.
     [stylegroup='noauto']   { line-width: @rdz18_min / 4 + 6; }
     [stylegroup='railway']  { line-width: 4 + 6; }
   }
+    [zoom>=18] {
+    [stylegroup='motorway'] { line-width: @rdz18_maj + 4; }
+    [stylegroup='mainroad'] { line-width: @rdz18_med + 4; }
+    [stylegroup='minorroad']{ line-width: @rdz18_min + 3.5; }
+    [stylegroup='service']  { line-width: @rdz18_min / 3 + 3.5; }
+    [stylegroup='noauto']   { line-width: @rdz18_min / 4 + 6; }
+    [stylegroup='railway']  { line-width: 4 + 6; }
+  }
 }
 
 
-#roads_high[zoom>=11][zoom<=20],
+#roads_high[zoom>=11][zoom<=22],
 #tunnel[render='3_inline'][zoom>=11][zoom<=20],
 #bridge[render='3_inline'][zoom>=11][zoom<=20]{
   /* -- colors & styles -- */
