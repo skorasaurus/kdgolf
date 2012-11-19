@@ -62,13 +62,15 @@ come in as well.
 @rdz16_maj: 8;   @rdz16_med: 6;   @rdz16_min: 4;
 @rdz17_maj: 14;  @rdz17_med: 12;  @rdz17_min: 10;
 @rdz18_maj: 20;  @rdz18_med: 17;  @rdz18_min: 14;
-@rdz19_maj: 20;  @rdz19_med: 17;  @rdz19_min: 19;
-@rdz20_maj: 20;  @rdz20_med: 17;  @rdz20_min: 24;
+@rdz19_maj: 24;  @rdz19_med: 23;  @rdz19_min: 19;
+@rdz20_maj: 24;  @rdz20_med: 36;  @rdz20_min: 24;
+@rdz21_maj: 24;  @rdz21_med: 46;  @rdz21_min: 34;
+@rdz22_maj: 24;  @rdz22_med: 44;  @rdz22_min: 36;
 
 
 /* ---- Casing ----------------------------------------------- */
 
-#roads_high::outline[zoom>=11][zoom<=20],
+#roads_high::outline[zoom>=11][zoom<=22],
 #tunnel[render='1_outline'][zoom>=11][zoom<=20],
 #bridge[render='1_outline'][zoom>=11][zoom<=20]{
   /* -- colors & styles -- */
@@ -106,15 +108,6 @@ come in as well.
   }
   [tunnel=1] { line-dasharray: 3,3; }        
   /* -- widths -- */
-  [zoom=11] {
-    [stylegroup='motorway'] { line-width: @rdz11_maj + 2; }
-    [stylegroup='mainroad'] { line-width: @rdz11_med + 1.6; }
-    [stylegroup='minorroad']{ line-width: @rdz11_min; }
-    /* No minor bridges yet */
-    [stylegroup='service']  { line-width: 0; }
-    [stylegroup='noauto']   { line-width: 0; }
-    [stylegroup='railway']  { line-width: 0; }
-  }
   [zoom=12] {
     [stylegroup='motorway'] { line-width: @rdz12_maj + 2; }
     [stylegroup='mainroad'] { line-width: @rdz12_med + 2; }
@@ -164,7 +157,6 @@ come in as well.
     [stylegroup='minorroad']{ line-width: @rdz17_min + 2; }
     [stylegroup='service']  { line-width: @rdz17_min / 3 + 2; }
     [stylegroup='noauto']   { line-width: @rdz17_min / 4 + 4; }
-    [stylegroup='railway']  { line-width: 3 + 4; } // 3 + 4
   }
   [zoom>=18] {
     [stylegroup='motorway'] { line-width: @rdz18_maj + 4; }
@@ -174,18 +166,34 @@ come in as well.
     [stylegroup='noauto']   { line-width: @rdz18_min / 4 + 6; }
     [stylegroup='railway']  { line-width: 4 + 6; }
   }
-    [zoom>=18] {
-    [stylegroup='motorway'] { line-width: @rdz18_maj + 4; }
-    [stylegroup='mainroad'] { line-width: @rdz18_med + 4; }
-    [stylegroup='minorroad']{ line-width: @rdz18_min + 3.5; }
-    [stylegroup='service']  { line-width: @rdz18_min / 3 + 3.5; }
-    [stylegroup='noauto']   { line-width: @rdz18_min / 4 + 6; }
+    [zoom>=19] {
+    [stylegroup='motorway'] { line-width: @rdz19_maj + 4; }
+    [stylegroup='mainroad'] { line-width: @rdz19_med + 4; }
+    [stylegroup='minorroad']{ line-width: @rdz19_min + 3.5; }
+    [stylegroup='service']  { line-width: @rdz19_min / 3 + 3.5; }
+    [stylegroup='noauto']   { line-width: @rdz19_min / 4 + 6; }
+    [stylegroup='railway']  { line-width: 4 + 6; }
+  }
+   [zoom>=20] {
+    [stylegroup='motorway'] { line-width: @rdz20_maj + 4; }
+    [stylegroup='mainroad'] { line-width: @rdz20_med + 4; }
+    [stylegroup='minorroad']{ line-width: @rdz20_min + 3.5; }
+    [stylegroup='service']  { line-width: @rdz20_min / 3 + 3.5; }
+    [stylegroup='noauto']   { line-width: @rdz20_min / 4 + 6; }
+    [stylegroup='railway']  { line-width: 4 + 6; }
+    }
+    [zoom>=21] {
+    [stylegroup='motorway'] { line-width: @rdz21_maj + 4; }
+    [stylegroup='mainroad'] { line-width: @rdz21_med + 4; }
+    [stylegroup='minorroad']{ line-width: @rdz21_min + 3.5; }
+    [stylegroup='service']  { line-width: @rdz21_min / 3 + 3.5; }
+    [stylegroup='noauto']   { line-width: @rdz21_min / 4 + 6; }
     [stylegroup='railway']  { line-width: 4 + 6; }
   }
 }
 
 
-#roads_high[zoom>=11][zoom<=22],
+#roads_high[zoom>=12][zoom<=22],
 #tunnel[render='3_inline'][zoom>=11][zoom<=20],
 #bridge[render='3_inline'][zoom>=11][zoom<=20]{
   /* -- colors & styles -- */
@@ -235,12 +243,6 @@ come in as well.
     line-cap: butt;
   }
   /* -- widths -- */
-  [zoom=11] {
-    [stylegroup='motorway'] { line-width: @rdz11_maj; }
-    [stylegroup='mainroad'] { line-width: @rdz11_med; }
-    [stylegroup='minorroad']{ line-width: 0; }
-    [stylegroup='railway']  { line-width: 0.2; }
-  }
   [zoom=12] {
     [stylegroup='motorway'] { line-width: @rdz12_maj; }
     [stylegroup='mainroad'] { line-width: @rdz12_med; }
@@ -295,9 +297,34 @@ come in as well.
     [stylegroup='noauto']   { line-width: @rdz18_min / 4; line-dasharray: 3,3; }
     [stylegroup='railway']  { line-width: 4; }
   }
+    [zoom>=19] {
+    [stylegroup='motorway'] { line-width: @rdz19_maj; }
+    [stylegroup='mainroad'] { line-width: @rdz19_med; }
+    [stylegroup='minorroad']{ line-width: @rdz19_min; }
+    [stylegroup='service']  { line-width: @rdz19_min / 2; }
+    [stylegroup='noauto']   { line-width: @rdz19_min / 4; line-dasharray: 3,3; }
+    [stylegroup='railway']  { line-width: 4; }
+  }
+    [zoom>=20] {
+    [stylegroup='motorway'] { line-width: @rdz20_maj; }
+    [stylegroup='mainroad'] { line-width: @rdz20_med; }
+    [stylegroup='minorroad']{ line-width: @rdz20_min; }
+    [stylegroup='service']  { line-width: @rdz20_min / 2; }
+    [stylegroup='noauto']   { line-width: @rdz20_min / 4; line-dasharray: 3,3; }
+    [stylegroup='railway']  { line-width: 4; }
+  }
+    [zoom>=21] {
+    [stylegroup='motorway'] { line-width: @rdz21_maj; }
+    [stylegroup='mainroad'] { line-width: @rdz21_med; }
+    [stylegroup='minorroad']{ line-width: @rdz21_min; }
+    [stylegroup='service']  { line-width: @rdz21_min / 2; }
+    [stylegroup='noauto']   { line-width: @rdz21_min / 4; line-dasharray: 3,3; }
+    [stylegroup='railway']  { line-width: 4; }
+  }
+  
 }
 
-/* ---- Bridge fill for dashed lines -------------------------------- */
+/* ---- Bridge fill for dashed lines - I CAN IGNORE THIS----------------------- */
 #tunnel[render='2_line'][zoom>=14][zoom<=20],
 #bridge[render='2_line'][zoom>=14][zoom<=20]{
   /* -- colors & styles -- */
@@ -330,7 +357,7 @@ come in as well.
   [zoom>=18] {
     [stylegroup='noauto']   { line-width: @rdz18_min / 4 + 3; }
     [stylegroup='railway']  { line-width: 4 + 3; }
-  }
+ }
 }
 
 /* ---- Turning Circles --------------------------------------------- */
@@ -355,3 +382,4 @@ come in as well.
   [zoom>=18] { marker-width:@rdz18_min * 1.1; }
 }
 /******************************************************************* */
+    
