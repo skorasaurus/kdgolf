@@ -64,8 +64,8 @@ come in as well.
 @rdz18_maj: 20;  @rdz18_med: 17;  @rdz18_min: 14;
 @rdz19_maj: 24;  @rdz19_med: 23;  @rdz19_min: 19;
 @rdz20_maj: 24;  @rdz20_med: 36;  @rdz20_min: 24;
-@rdz21_maj: 24;  @rdz21_med: 42;  @rdz21_min: 28;
-@rdz22_maj: 24;  @rdz22_med: 44;  @rdz22_min: 29;
+@rdz21_maj: 24;  @rdz21_med: 46;  @rdz21_min: 34;
+@rdz22_maj: 24;  @rdz22_med: 44;  @rdz22_min: 36;
 
 
 /* ---- Casing ----------------------------------------------- */
