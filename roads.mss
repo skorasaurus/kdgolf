@@ -63,9 +63,9 @@ come in as well.
 @rdz17_maj: 14;  @rdz17_med: 12;  @rdz17_min: 10;
 @rdz18_maj: 20;  @rdz18_med: 17;  @rdz18_min: 14;
 @rdz19_maj: 24;  @rdz19_med: 23;  @rdz19_min: 19;
-@rdz20_maj: 24;  @rdz20_med: 36;  @rdz20_min: 24;
-@rdz21_maj: 24;  @rdz21_med: 46;  @rdz21_min: 34;
-@rdz22_maj: 24;  @rdz22_med: 44;  @rdz22_min: 36;
+@rdz20_maj: 24;  @rdz20_med: 36;  @rdz20_min: 48;
+@rdz21_maj: 24;  @rdz21_med: 46;  @rdz21_min: 60;
+@rdz22_maj: 24;  @rdz22_med: 44;  @rdz22_min: 48;
 
 
 /* ---- Casing ----------------------------------------------- */
@@ -190,6 +190,8 @@ come in as well.
     [stylegroup='noauto']   { line-width: @rdz21_min / 4 + 6; }
     [stylegroup='railway']  { line-width: 4 + 6; }
   }
+  
+  
 }
 
 
