@@ -820,6 +820,60 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "basket-node-label"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -85.6034720465928,
+        42.28891073314338,
+        -85.59874528808456,
+        42.290932403107995
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( SELECT tee, way from planet_osm_point WHERE tee IS NOT NULL) AS teezlabels",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-9529334.91836294,5204355.59843907,-9528808.7380127,5204659.82477634",
+        "dbname": "kdgolf2",
+        "host": "localhost",
+        "user": "postgres",
+        "password": "postgres"
+      },
+      "id": "tee-node-label",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "tee-node-label"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -85.60349910058882,
+        42.28890084188573,
+        -85.59881375756143,
+        42.29080597999608
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( SELECT tee, way from planet_osm_line WHERE tee IS NOT NULL) AS teelinelabel",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "-9529337.93,5204354.11,-9528816.36,5204640.8",
+        "dbname": "kdgolf2",
+        "host": "localhost",
+        "user": "postgres",
+        "password": "postgres"
+      },
+      "id": "tee-line-label",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "tee-line-label"
     }
   ],
   "scale": 1,

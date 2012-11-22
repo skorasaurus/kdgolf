@@ -301,21 +301,48 @@
 }
   }
 
-#tee-node{
+#tee-node-label {
   text-name: "[tee]" ;
   text-face-name:@sans;
   text-fill:#444;
- text-size: 12;
+  text-size: 12;
   text-allow-overlap: true;
+  text-placement:point;
+  text-halo-fill:@other_halo;
+  text-halo-radius:1;
+  text-wrap-width: 30;
+  [zoom>=19] {
+    text-size: 18; 
+}
+  [zoom>=20] {
+    text-size: 32; 
+}
+  [zoom>=21] {
+    text-size: 36; 
+}
   }
 
-#tee-line{
+#tee-line-label {
   text-name: "[tee]" ;
   text-face-name:@sans;
   text-fill:#444;
- text-size: 12;
+  text-size: 12;
   text-allow-overlap: true;
+  text-placement:point;
+  text-halo-fill:@other_halo;
+  text-halo-radius:1;
+  text-wrap-width: 30;
+  [zoom>=19] {
+    text-size: 18; 
+}
+  [zoom>=20] {
+    text-size: 32; 
+}
+  [zoom>=21] {
+    text-size: 36; 
+}
   }
+
 
 
 
