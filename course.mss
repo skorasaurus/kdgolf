@@ -31,14 +31,21 @@ marker-width:9;
   marker-line-color:#3049FF;
   marker-fill-opacity:.22;
   marker-allow-overlap:true;
+  
+  [zoom>=18] {marker-width:12; }
+  [zoom>=19] {marker-width:18; }
+  [zoom>=20] {marker-width:22; }
+  [zoom>=21] {marker-width:55; }
+  [zoom>=22] {marker-width:55; }
+ 
 }
 
 
 #tee-line {
   line-width:4;
   line-color:#3049FF;
-  polygon-fill:#999;
-  polygon-opacity:.74;
+  polygon-fill:#3049FF;
+  polygon-opacity:.22;
  }
   
 #tee-line::tee-bands {
